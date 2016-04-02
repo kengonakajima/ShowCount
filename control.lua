@@ -20,7 +20,6 @@ script.on_event(defines.events.on_tick, function(event)
         local swt_cnt = game.player.force.get_kill_count( "small-worm-turret" )
         local mwt_cnt = game.player.force.get_kill_count( "medium-worm-turret" )    
         local bwt_cnt = game.player.force.get_kill_count( "big-worm-turret" )
-        game.player.print(sb_cnt)
         game.player.gui.top.countdisplay.caption = "Biters: " .. bhb_cnt .. "/" .. bb_cnt .. "/" .. mb_cnt .. "/" .. sb_cnt .. " Spitters: " .. bhs_cnt .. "/" .. bs_cnt .. "/" .. ms_cnt .. "/" .. ss_cnt .. " Turrets: " .. bwt_cnt .. "/" .. mwt_cnt .. "/" .. swt_cnt
     else
     	game.player.gui.top.add{ name = "countdisplay", type = "label", caption = "Counts", style="caption_label_style"}
